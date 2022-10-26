@@ -1,11 +1,11 @@
-const fecha = new Date()
+const hoy = new Date()
 console.log(fecha)
 
-const fecha2 = new Date(2001, 11, 17)
-console.log(fecha2)
+const nacimiento = new Date(2001, 11, 17)
+console.log(nacimiento)
 
-console.log(fecha > fecha2)
+console.log(hoy > nacimiento)
 
-console.log(fecha2.getDate())
-console.log(fecha2.getMonth() + 1)
-console.log(fecha2.getFullYear())
+const diaNacimiento = nacimiento.getDate()
+const mesNacimiento = nacimiento.getMonth() + 1
+const AnyoNacimiento = nacimiento.getFullYear()

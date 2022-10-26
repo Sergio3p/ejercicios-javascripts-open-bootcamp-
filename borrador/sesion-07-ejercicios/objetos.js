@@ -6,16 +6,18 @@ const obj = {
     eresDesarrollador: true
 }
 
-const prop = "edad"
-console.log(obj[prop])
+const edad = datos.edad
+console.log(edad)
 
-console.log(obj)
 
-const amigos = [
-    {Nombre: "Miguel Rodriguez", edad: 23},
-
-    {Nombre: "Bruno Matricardi", edad: 22},
+const lista = [
+    {
+        ...datos
+},{
+    Nombre: "Miguel Rodriguez", edad: 23
+},{
+    Nombre: "Bruno Matricardi", edad: 22},
 ]
 
 console.log(amigos)
-amigos.sort((a, b) => a.edad - b.edad)
+amigos.sort((a, b) => b.edad - a.edad)
