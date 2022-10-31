@@ -1,0 +1,32 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",//extends --> Es una regla que eslint nos agrega para tener un orden menos desordenado. extends es una regla que consiste en extender nuestras reglas a través de reglas publicas.
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-unused-vars": "off" //Esta es una manera para eliminar un error. Esto se lo conoce como override (Es una sobre escritura de las reglas previamentes definidas en esta extensión).
+    }
+}
